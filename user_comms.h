@@ -14,3 +14,4 @@ void removeElAVL(AVL& avl);
 
 void fillRBT(RBT& rbt);
 void addElRBT(RBT& rbt);
+void removeElRBT(RBT& rbt);

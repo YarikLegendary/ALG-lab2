@@ -12,10 +12,6 @@ class AVL {
 
 		Node(int key) : x(key), height(1), left(nullptr), right(nullptr) {}
 
-		~Node() {
-			//if (left) delete left;
-			//if (right) delete right;
-		}
 	} *root = nullptr;
 
 	unsigned height(Node* root) {
@@ -153,24 +149,48 @@ class AVL {
 		return balance(root);
 	}
 
-	void print(Node* root) {
-
+	void printTree(Node* root, string indent = "", bool last = true) {
 		if (root == nullptr) return;
 
-		print(root->left);
-		cout << root->x << endl;
-		print(root->right);
+		cout << indent;
+		if (last) {
+			cout << "L--- ";
+			indent += "     ";
+		}
+		else {
+			cout << "|--- ";
+			indent += "|    ";
+		}
 
+		cout << root->x<< " (h=" << root->height << ")" << endl;
+
+		printTree(root->right, indent, false);
+		printTree(root->left, indent, true);
+	}
+
+	void deleteTree(Node* root) {
+		if (root != nullptr) {
+			deleteTree(root->left);
+			deleteTree(root->right);
+			delete root;
+		}
 	}
 
 public:
+
+	~AVL() { deleteTree(root); }
+
+	Node* getRoot() const {
+		return root;
+	}
+
 	void insert(int key) {
 		insert(root, key);
 	}
 	void remove(int key) {
 		root = remove(root, key);
 	}
-	void print() {
-		print(root);
+	void printTree() {
+		printTree(root, "", true);
 	}
 };

@@ -11,10 +11,6 @@ class BST {
 
 		Node(int key) : x(key), left(nullptr), right(nullptr) { }
 
-		~Node() {
-			if (left) delete left;
-			if (right) delete right;
-		}
 	} *root = nullptr;
 
 	void insert(Node*& root, int key) {
@@ -82,14 +78,24 @@ class BST {
 
 	}
 
-	void print(Node* root) {
-
+	void printTree(Node* root, string indent = "", bool last = true) {
 		if (root == nullptr) return;
 
-		print(root->left);
-		cout << root->x << endl;
-		print(root->right);
+		cout << indent;
+		if (last) {
+			cout << "L--- ";
+			indent += "     ";
+		}
+		else {
+			cout << "|--- ";
+			indent += "|    ";
+		}
 
+		cout << root->x  << endl;
+
+		// Рекурсивно выводим детей (сначала правый, потом левый)
+		printTree(root->right, indent, false);
+		printTree(root->left, indent, true);
 	}
 
 	Node* findMax(Node* root) {
@@ -154,7 +160,6 @@ class BST {
 					rear = newNode;
 				}
 			}
-
 			delete temp;  // освобождаем память узла очереди
 		}
 	}
@@ -190,12 +195,27 @@ class BST {
 		inorder_trav(node->right);
 	}
 
+	void deleteTree(Node* root) {
+		if (root != nullptr) {
+			deleteTree(root->left);
+			deleteTree(root->right);
+			delete root;
+		}
+	}
+
 public:
+
+	~BST() { deleteTree(root); }
+
+	Node* getRoot() const {
+		return root;
+	}
+
 	void insert(int key) {
 		insert(root, key);
 	}
-	void print() {
-		print(root);
+	void printTree() {
+		printTree(root, "", true);
 	}
 	void remove(int key) {
 		remove(root, key);

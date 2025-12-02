@@ -1,7 +1,7 @@
 #include "user_comms.h"
 
 void fillBST(BST& bst) {
-    cout << "Введите элементы дерева (0 для завершения):\n" << endl;
+    cout << "\nВведите элементы дерева (0 для завершения):\n" << endl;
     while (true) {
         int x; cin >> x;
         if (x == 0) break;
@@ -10,7 +10,7 @@ void fillBST(BST& bst) {
 }
 void showTreeInfo(BST& bst) {
     cout << "\n"; cout << "BST ДЕРЕВО: \n" << endl;
-    bst.print(); cout << endl;
+    bst.printTree(); cout << endl;
     cout << "Наибольший элемент: " << bst.printMax() << endl; 
     cout << "Наименьший элемент: " << bst.printMin() << endl; cout << endl;
     cout << "Обход в ширину: "; bst.printBFS(); cout << endl; 
@@ -29,7 +29,7 @@ void removeElBST(BST& bst) {
 }
 
 void fillAVL(AVL& avl) {
-    cout << "Введите элементы дерева (0 для завершения):\n" << endl;
+    cout << "\nВведите элементы дерева (0 для завершения):\n" << endl;
     while (true) {
         int x; cin >> x;
         if (x == 0) break;
@@ -37,16 +37,16 @@ void fillAVL(AVL& avl) {
     }
 }
 void addElAVL(AVL& avl) {
-    cout << "Вставить элемент: ";
+    cout << "\nВставить элемент: ";
     int a; cin >> a; avl.insert(a); 
 }
 void removeElAVL(AVL& avl) {
-    cout << "Удалить элемент: ";
+    cout << "\nУдалить элемент: ";
     int b; cin >> b; avl.remove(b); cout << endl;
 }
 
 void fillRBT(RBT& rbt) {
-    cout << "Введите элементы дерева (0 для завершения):\n" << endl;
+    cout << "\nВведите элементы дерева (0 для завершения):\n" << endl;
     while (true) {
         int x; cin >> x;
         if (x == 0) break;
@@ -54,6 +54,10 @@ void fillRBT(RBT& rbt) {
     }
 }
 void addElRBT(RBT& rbt) {
-    cout << "Вставить элемент: ";
+    cout << "\nВставить элемент: ";
     int a; cin >> a; rbt.insert(a);
+}
+void removeElRBT(RBT& rbt) {
+    cout << "\nУдалить элемент: ";
+    int b; cin >> b; rbt.remove(b); cout << endl;
 }
