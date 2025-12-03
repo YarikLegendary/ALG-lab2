@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\Debug\\data.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Debug\\data.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\Func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\RBT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RBT.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -25,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\user_comms.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:user_comms.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\Func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Func.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\Debug\\data.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Debug\\data.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACEAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-11-29T12:10:58.34Z",
               "IsPinned": true,
@@ -60,13 +60,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "RBT.h",
               "DocumentMoniker": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\RBT.h",
               "RelativeDocumentMoniker": "RBT.h",
               "ToolTip": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\RBT.h",
               "RelativeToolTip": "RBT.h",
-              "ViewState": "AgIAADEBAAAAAAAAAAAAAHQBAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAAAJkBAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-29T12:11:01.903Z",
               "IsPinned": true,
@@ -82,33 +82,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AVL.h",
               "DocumentMoniker": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\AVL.h",
               "RelativeDocumentMoniker": "AVL.h",
               "ToolTip": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\AVL.h",
               "RelativeToolTip": "AVL.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-29T12:11:03.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BST.h",
               "DocumentMoniker": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\BST.h",
               "RelativeDocumentMoniker": "BST.h",
               "ToolTip": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\BST.h",
               "RelativeToolTip": "BST.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAM8AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-11-29T12:11:02.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "user_comms.cpp",
               "DocumentMoniker": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\user_comms.cpp",
               "RelativeDocumentMoniker": "user_comms.cpp",
@@ -121,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "user_comms.h",
               "DocumentMoniker": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\user_comms.h",
               "RelativeDocumentMoniker": "user_comms.h",
@@ -134,26 +134,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Func.h",
               "DocumentMoniker": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\Func.h",
               "RelativeDocumentMoniker": "Func.h",
               "ToolTip": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\Func.h",
               "RelativeToolTip": "Func.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-02T18:18:26.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "data.txt",
               "DocumentMoniker": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\Debug\\data.txt",
               "RelativeDocumentMoniker": "Debug\\data.txt",
               "ToolTip": "C:\\Users\\\u042F\u0440\u0438\u043A\\source\\repos\\ALG-lab2\\Debug\\data.txt",
               "RelativeToolTip": "Debug\\data.txt",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-12-02T19:48:24.148Z",
               "EditorCaption": ""

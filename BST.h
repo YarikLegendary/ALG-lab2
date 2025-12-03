@@ -93,7 +93,6 @@ class BST {
 
 		cout << root->x  << endl;
 
-		// Рекурсивно выводим детей (сначала правый, потом левый)
 		printTree(root->right, indent, false);
 		printTree(root->left, indent, true);
 	}
@@ -116,8 +115,8 @@ class BST {
 	}
 
 	struct QueueNode {
-		Node* treeNode;        // узел дерева
-		QueueNode* next;       // следующий элемент очереди
+		Node* treeNode;
+		QueueNode* next;
 
 		QueueNode(Node* node) : treeNode(node), next(nullptr) {}
 	};
@@ -125,20 +124,17 @@ class BST {
 
 		if (root == nullptr) return;
 
-		// Создаем простую очередь через связный список
 		QueueNode* front = new QueueNode(root);
 		QueueNode* rear = front;
 
 		while (front != nullptr) {
 
-			// Извлекаем из начала
 			Node* current = front->treeNode;
 			QueueNode* temp = front;
 			front = front->next;
 
 			cout << current->x << " ";
 
-			// Добавляем потомков в конец
 			if (current->left != nullptr) {
 				QueueNode* newNode = new QueueNode(current->left);
 				if (front == nullptr) {
@@ -160,16 +156,16 @@ class BST {
 					rear = newNode;
 				}
 			}
-			delete temp;  // освобождаем память узла очереди
+			delete temp;  
 		}
 	}
 
 	void deep_trav(Node* node) {
 		if (node == nullptr) return;
 
-		deep_trav(node->left);   // Сначала левая ветка
-		cout << node->x << " ";       // Потом текущий узел
-		deep_trav(node->right);  // Затем правая ветка
+		deep_trav(node->left);   
+		cout << node->x << " ";       
+		deep_trav(node->right);  
 	}
 
 	void preorder_trav(Node* node) {

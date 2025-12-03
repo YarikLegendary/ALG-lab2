@@ -28,23 +28,23 @@ void createData(TreeType& tree) {
         cout << "Ошибка создания файла!" << endl;
         return;
     }
-    f << "Высота      Количество элементов" << endl;
-    f << "----------------------------------" << endl;
+    f << "Высота (для RBT -1) | Количество элементов" << endl;
+    f << "--------------------|---------------------" << endl;
 
-    int start = 1, end = 100000, value = 0, height = 1;
+    int start = 1, end = 100000, value = 1, height = 1;
     unsigned N = 0;
 
-	for (int i = 0; i < 100; i++) {
+	for (int i = 0; i < 1000; i++) {
 
-        for (int step = 0; step < 100; step++) {
+        for (int step = 0; step < 10; step++) {
             value = rand() % (end - start + 1) + start;
             tree.insert(value); N++;
         }
         height = maxDepth(tree.getRoot());
 
-        f << height;
+        f << "        " << height;
         if ((height - 10) < 0) f << " ";
-        f << "       |        " << N << endl;;
+        f << "          |          " << N << endl;
 	}
     f.close();
 }

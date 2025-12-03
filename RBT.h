@@ -76,15 +76,15 @@ class RBT {
 
 				Node* uncle = gparent->right;
 
-				// Случай 3A: Дядя красный
+				// Дядя красный
 				if (uncle != nullptr && uncle->color == RED) {
 					parent->color = BLACK;
 					uncle->color = BLACK;
 					gparent->color = RED;
-					node = gparent;  // Поднимаемся выше
+					node = gparent; 
 				}
 				else {
-					// Случай 3B: Треугольник
+					// Треугольник
 					if (node == parent->right) {
 						node = parent;
 						leftRotate(root, node);
@@ -96,7 +96,7 @@ class RBT {
 						if (gparent == nullptr) break;
 					}
 
-					// Случай 3C: Линия
+					// Линия
 					parent->color = BLACK;
 					gparent->color = RED;
 					rightRotate(root, gparent);
@@ -104,10 +104,9 @@ class RBT {
 				}
 			}
 			else {
-				// Симметричный случай для правой стороны
+				
 				Node* uncle = gparent->left;
 
-				// Случай 3A: Дядя красный
 				if (uncle != nullptr && uncle->color == RED) {
 					parent->color = BLACK;
 					uncle->color = BLACK;
@@ -115,7 +114,6 @@ class RBT {
 					node = gparent;
 				}
 				else {
-					// Случай 3B: Треугольник
 					if (node == parent->left) {
 						node = parent;
 						rightRotate(root, node);
@@ -126,8 +124,6 @@ class RBT {
 						gparent = parent->parent;
 						if (gparent == nullptr) break;
 					}
-
-					// Случай 3C: Линия
 					parent->color = BLACK;
 					gparent->color = RED;
 					leftRotate(root, gparent);
@@ -140,53 +136,51 @@ class RBT {
 
 	void leftRotate(Node*& root, Node* node) {
 
-		Node* tmp = node->right;    // новый "корень" после поворота
-		node->right = tmp->left;    // перемещаем левое поддерево y
+		Node* tmp = node->right;    
+		node->right = tmp->left;    
 
 		if (tmp->left != pnode) {
-			tmp->left->parent = node;  // обновляем родителя
+			tmp->left->parent = node;  
 		}
 
-		tmp->parent = node->parent;    // переносим родителя
+		tmp->parent = node->parent;    
 
-		// Обновляем ссылку у родителя x
 		if (node->parent == nullptr) {
-			root = tmp;             // x был корнем
+			root = tmp;            
 		}
 		else if (node == node->parent->left) {
-			node->parent->left = tmp;  // x был левым ребенком
+			node->parent->left = tmp;  
 		}
 		else {
-			node->parent->right = tmp; // x был правым ребенком
+			node->parent->right = tmp; 
 		}
 
-		tmp->left = node;    // x становится левым ребенком y
-		node->parent = tmp;  // обновляем родителя x
+		tmp->left = node;    
+		node->parent = tmp;  
 	}
 
 	void rightRotate(Node*& root, Node* node) {
-		Node* tmp = node->left;     // новый "корень" после поворота
-		node->left = tmp->right;    // перемещаем правое поддерево x
+		Node* tmp = node->left;
+		node->left = tmp->right; 
 
 		if (tmp->right != pnode) {
-			tmp->right->parent = node;  // обновляем родителя
+			tmp->right->parent = node;  
 		}
 
-		tmp->parent = node->parent;    // переносим родителя
+		tmp->parent = node->parent;    
 
-		// Обновляем ссылку у родителя y
 		if (node->parent == nullptr) {
-			root = tmp;             // y был корнем
+			root = tmp;           
 		}
 		else if (node == node->parent->left) {
-			node->parent->left = tmp;  // y был левым ребенком
+			node->parent->left = tmp; 
 		}
 		else {
-			node->parent->right = tmp; // y был правым ребенком
+			node->parent->right = tmp; 
 		}
 
-		tmp->right = node;   // y становится правым ребенком x
-		node->parent = tmp;  // обновляем родителя y
+		tmp->right = node;  
+		node->parent = tmp;  
 	}
 
 	void remove(Node*& root, int key) {
@@ -286,9 +280,6 @@ class RBT {
 			cur->x = minValue;
 			cur->color = curColor;
 
-			//if (minColor == BLACK) {
-			//	fixDelete(root, cur);
-			//}
 		}
 
 	}
@@ -366,7 +357,7 @@ class RBT {
 			if (brat->right != pnode) brat->right->color = BLACK;
 			leftRotate(root, parent);
 
-			return root;  // Возвращаем корень - цикл завершится
+			return root; 
 		}
 	}
 
